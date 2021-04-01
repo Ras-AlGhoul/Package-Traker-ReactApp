@@ -1,0 +1,13 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400&display=swap");
+/* Modules */
+@import url("header-nav.css");
+@import url("search-bar.css");
+
+body {
+  background: url("../images/1.png") no-repeat center fixed;
+  background-size: 200px;
+  background-position: left;
+  background-position-x: 12px;
+  background-position-y: 580px;
+}

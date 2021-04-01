@@ -1,0 +1,32 @@
+@media only screen and (min-width: 660px) {
+  .header {
+    grid-template-columns: 1fr 1fr 1fr; /* each fr is a equal space column. */
+  }
+}
+.introduction .avatar {
+  border-radius: 100px;
+  width: 170px;
+}
+
+.center {
+  text-align: center;
+}
+.h1 {
+  text-align: center;
+  font-family: "Gothic A1";
+  color: #158467;
+}
+.main-menu {
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 25px;
+  text-align: center;
+  font-family: "Gothic A1";
+
+  width: 100%;
+}
+
+.main-menu a {
+  text-decoration: none;
+  padding: 10px;
+  color: #158467;
+}
