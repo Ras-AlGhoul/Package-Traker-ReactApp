@@ -4,7 +4,7 @@ import Greeting from "../components/greeting";
 
 export default function Home() {
   return (
-    <div className="container">
+    <div>
       <Greeting />
       <h3 className="h3">Good to see you again, John Doe</h3>
       <SearchBar />
