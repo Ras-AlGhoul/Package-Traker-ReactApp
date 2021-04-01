@@ -4,7 +4,7 @@ export default function SearchBar() {
   return (
     <div>
       <form className="search-bar">
-        <input type="text" placeholder="Search" />
+        <input type="text" placeholder="Search Parcel..." />
         <input type="submit" value="Search" />
       </form>
     </div>

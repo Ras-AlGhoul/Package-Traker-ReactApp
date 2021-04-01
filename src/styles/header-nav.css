@@ -12,7 +12,13 @@
   text-align: center;
 }
 .h1 {
-  text-align: center;
+  margin-top: 50px;
+  text-align: left;
+  font-family: "Gothic A1";
+  color: #158467;
+}
+.h3 {
+  text-align: left;
   font-family: "Gothic A1";
   color: #158467;
 }

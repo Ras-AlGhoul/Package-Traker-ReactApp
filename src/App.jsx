@@ -16,7 +16,7 @@ export default function App() {
         <Nav />
 
         <Switch>
-          <Route exact path="/home" component={Home} />
+          <Route path="/" component={Home} />
           <Route exact path="/packages" component={Packages} />
           <Route exact path="/results" component={Results} />
         </Switch>
