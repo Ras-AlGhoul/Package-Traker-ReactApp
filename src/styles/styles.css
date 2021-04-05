@@ -3,7 +3,7 @@
 /* Modules */
 @import url("header-nav.css");
 @import url("search-bar.css");
-
+@import url("card.css");
 body {
   background: url("../images/1.png") no-repeat center fixed;
   background-size: 200px;

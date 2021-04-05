@@ -1,42 +1,21 @@
 import React from "react";
 import PkgIcon from "../images/PkgIcon.png";
+import Data from "../data/Data.json";
 
-export default function Card({ package }) {
-  const {
-    id,
-    status,
-    eta,
-    parcel_id,
-    sender,
-    verification_required,
-    location_id,
-    location_name,
-    location_coordinate_latitude,
-    location_coordinate_longitude,
-    location_status_ok,
-    user_phone,
-    user_name,
-    notes,
-    last_updated,
-  } = package;
+export default function Card({ parcel_id, status, eta, sender, location }) {
   return (
-    <div className="container">
-      <h1>
-        <span>#{id} </span>
-        {user_name}
-      </h1>
+    <article className="package-item">
+      <a href={`/package/${parcel_id}`}>
+        <img className="img" src={PkgIcon} alt="package icon" />
+      </a>
 
-      <div className="image">
-        <img src={PkgIcon} alt="package Icon" />
+      <div className="">
+        <h3 className="h4">Status: {status}</h3>
+        <p className="h4">ETA: {eta}</p>
+        <p className="h4">Sender: {sender}</p>
+        <p className="h4">Location: {location}</p>
+        <p className="h4">Parcel Id: {parcel_id}</p>
       </div>
-
-      <p>Status: {status}</p>
-      <p>Parcel_id: {parcel_id}</p>
-      <p>Sender: {sender}</p>
-      <p>ETA: {eta}</p>
-      <p>Location: {location_name}</p>
-      <p>notes: {notes}</p>
-      <p>last updated: {last_updated} </p>
-    </div>
+    </article>
   );
 }

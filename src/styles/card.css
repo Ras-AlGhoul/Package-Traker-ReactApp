@@ -1,0 +1,46 @@
+.img {
+  height: 200px;
+}
+/* Iphone */
+@media (min-width: 400px) {
+  .content .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-column-gap: var(--space-small);
+  }
+}
+/* Ipad */
+@media (min-width: 500px) {
+  .content .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: var(--space-medium);
+  }
+}
+
+/* computer */
+@media (min-width: 650px) {
+  .content .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: var(--space-big);
+  }
+}
+.package-item {
+  text-align: center;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 25px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding: 8px;
+  margin-left: 4px;
+  max-width: 100%;
+  height: auto;
+}
+.details {
+  display: flex;
+}
+.text {
+  margin: 50px;
+}
