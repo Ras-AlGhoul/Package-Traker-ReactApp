@@ -3,11 +3,16 @@
   box-sizing: border-box;
   display: inline-block;
   width: calc(100% - 64px - 10px); /* 48px is the width of the search button */
-  height: 36px;
+  height: 25px;
   padding: 8px;
   font-size: 14px;
-  border: solid 0.5px #828282;
+  border-radius: 25px;
+  background-color: rgba(211, 211, 211, 0.5);
+  border: solid 0.5px white;
   outline: none;
+}
+::placeholder {
+  color: #fdde6b;
 }
 
 /* The submit button */
@@ -15,15 +20,16 @@
   box-sizing: border-box;
   display: inline-block;
   width: 64px;
-  height: 36px;
-  background-color: #f8f8f8;
-  color: #828282;
-  border: solid 0.5px #828282;
+  height: 25px;
+  background-color: rgba(211, 211, 211, 0.5);
+  color: #fdde6b;
+  border: solid 0.5px white;
+  border-radius: 25px;
   text-align: center;
   vertical-align: top;
   text-decoration: none;
-  line-height: 36px;
+  line-height: 25px;
 }
 .search-bar {
-  margin-top: 170px;
+  margin-top: 40px;
 }

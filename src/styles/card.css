@@ -1,12 +1,11 @@
 .img {
-  height: 200px;
+  height: 150px;
 }
 /* Iphone */
 @media (min-width: 400px) {
   .content .grid {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: var(--space-small);
   }
 }
 /* Ipad */
@@ -14,7 +13,6 @@
   .content .grid {
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-column-gap: var(--space-medium);
   }
 }
 
@@ -23,14 +21,13 @@
   .content .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: var(--space-big);
   }
 }
 .package-item {
   text-align: center;
   background-color: rgba(211, 211, 211, 0.5);
   border-radius: 25px;
-  margin-right: 20px;
+  margin-right: 4px;
   margin-left: 20px;
   margin-bottom: 20px;
   padding: 8px;
@@ -39,7 +36,6 @@
   height: auto;
 }
 .details {
-  display: flex;
 }
 .text {
   margin: 50px;

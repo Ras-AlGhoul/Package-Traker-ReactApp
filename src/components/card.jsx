@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PkgIcon from "../images/PkgIcon.png";
-import Data from "../data/Data.json";
 
-export default function Card({ parcel_id, status, eta, sender, location }) {
+
+export default function Card({ parcel_id, id, status, eta, sender, location, user_name}) {
   return (
     <article className="package-item">
-      <a href={`/package/${parcel_id}`}>
+      <Link to={`/package/${id}`}>
         <img className="img" src={PkgIcon} alt="package icon" />
-      </a>
+      </Link>
 
       <div className="">
         <h3 className="h4">Status: {status}</h3>

@@ -1,17 +1,15 @@
 import React from "react";
-import PkgIcon from "../images/PkgIcon.png";
 export default function PackageDescription({ information }) {
   const ACCESS_TOKEN = process.env.REACT_APP_ACCESS_TOKEN;
-  console.log(ACCESS_TOKEN);
+  console.log("details", information);
   return (
     <article className="package-item">
       <div className="details">
         <img
-          className=""
-          src={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/${information.location_coordinate_longitude},${information.location_coordinate_latitude},11.00,0/500x400?access_token=${ACCESS_TOKEN}`}
+          className="imgg"
+          src={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/${information.location_coordinate_longitude},${information.location_coordinate_latitude},11.00,0/200x200?access_token=${ACCESS_TOKEN}`}
           alt="package icon"
         />
-
         <div className="text">
           <h3 className="h4">Status: {information.status}</h3>
           <p className="h4">ETA: {information.eta}</p>

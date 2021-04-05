@@ -1,19 +1,20 @@
 import PackageDescription from "../components/packageDescription";
-import Data from "../data/Data.json";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-export default function Package({ match }) {
-  const routerID = match.params.id;
-  const pckage = Data.find((item) => item.parcel_id === routerID);
-  console.log(match.params.id);
+export default function Package(props) {
+  const routerID = props.match.params.id;
+
+  const pkg = props.data.filter((i) => i.id == routerID);
+
   return (
     <div className="package">
       <div className="body-container">
-        <h1 className="h">{pckage.status}</h1>
-
+        <h1 className="h">{pkg.status}</h1>
         <hr />
-
-        <PackageDescription information={pckage} />
+        {pkg.map((i) => (
+          <PackageDescription key={i.id} information={i} />
+        ))}
+        <hr />
       </div>
     </div>
   );

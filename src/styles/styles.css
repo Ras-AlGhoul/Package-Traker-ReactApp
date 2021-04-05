@@ -5,9 +5,6 @@
 @import url("search-bar.css");
 @import url("card.css");
 body {
-  background: url("../images/1.png") no-repeat center fixed;
-  background-size: 200px;
-  background-position: left;
-  background-position-x: 12px;
-  background-position-y: 540px;
+  background: url("../images/background.jpg") no-repeat center fixed;
+  background-size: cover;
 }

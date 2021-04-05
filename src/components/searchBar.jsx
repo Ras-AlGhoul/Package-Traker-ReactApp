@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
+import Results from "../pages/results";
 
 export default function SearchBar() {
   // State
