@@ -1,6 +1,6 @@
 # Package-Traking
 Package Tracking website using React. 
-the user will be able to track his packages using the parcel id. 
+the user will be able to view a list of his parcels and track his packages using the parcel id. 
 
 
 feel free to visit at:
