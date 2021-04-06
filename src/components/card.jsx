@@ -2,12 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import PkgIcon from "../images/PkgIcon.png";
 
-
-export default function Card({ parcel_id, id, status, eta, sender, location, user_name}) {
+export default function Card({
+  parcel_id,
+  id,
+  status,
+  eta,
+  sender,
+  location,
+  user_name,
+}) {
   return (
     <article className="package-item">
       <Link to={`/package/${id}`}>
         <img className="img" src={PkgIcon} alt="package icon" />
+      </Link>
+      <Link to={`/package/${id}`}>
+        <button class="btn btn1">View Details</button>
       </Link>
 
       <div className="">

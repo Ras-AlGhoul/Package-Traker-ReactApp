@@ -7,7 +7,7 @@ export default function PackageDescription({ information }) {
       <div className="details">
         <img
           className="imgg"
-          src={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/${information.location_coordinate_longitude},${information.location_coordinate_latitude},11.00,0/200x200?access_token=${ACCESS_TOKEN}`}
+          src={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/static/pin-s+555555(${information.location_coordinate_longitude},${information.location_coordinate_latitude})/${information.location_coordinate_longitude},${information.location_coordinate_latitude},8.71,0/300x300?access_token=${ACCESS_TOKEN}`}
           alt="package icon"
         />
         <div className="text">
