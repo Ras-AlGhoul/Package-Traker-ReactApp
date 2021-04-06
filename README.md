@@ -5,7 +5,7 @@ the user will be able to view a list of his parcels and track his packages using
 
 
 
-you can try yourself searching the parcels by choosing any parcel id from the packages page feel free to visit at:
+you can try yourself searching the parcels by choosing any parcel id from the packages page feel free to visit at:             
 https://package-tracking-bc40c.web.app/
 
 <img width="1439" alt="Screenshot 2021-04-06 at 12 19 53 AM" src="https://user-images.githubusercontent.com/77113737/113634054-63363d00-966e-11eb-9c79-986779d5b57c.png">
