@@ -12,7 +12,6 @@ export default function Results(props) {
       {pkg.map((i) => (
         <PackageDescription key={i.id} information={i} />
       ))}
-      <hr />
     </div>
   );
 }
