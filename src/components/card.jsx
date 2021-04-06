@@ -16,9 +16,11 @@ export default function Card({
       <Link to={`/package/${id}`}>
         <img className="img" src={PkgIcon} alt="package icon" />
       </Link>
-      <Link to={`/package/${id}`}>
-        <button class="btn btn1">View Details</button>
-      </Link>
+      <div>
+        <Link to={`/package/${id}`}>
+          <button class="btn btn1">View Details</button>
+        </Link>
+      </div>
 
       <div className="">
         <h3 className="h4">Status: {status}</h3>
