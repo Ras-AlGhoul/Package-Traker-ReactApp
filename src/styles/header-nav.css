@@ -19,16 +19,26 @@
 }
 .h1 {
   margin-top: 50px;
+  margin-left: 15px;
   text-align: left;
   padding: 5px;
   font-family: "Gothic A1";
-  color: #fdde6b;
+  color: black;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 25px;
+  background-size: 0px;
+  display: inline-block;
 }
 .h3 {
   text-align: left;
   padding: 5px;
+  margin-left: 15px;
   font-family: "Gothic A1";
-  color: #fdde6b;
+  color: black;
+  background-color: rgba(211, 211, 211, 0.5);
+  border-radius: 25px;
+  background-size: 0px;
+  display: inline-block;
 }
 .h4 {
   text-align: left;
@@ -51,5 +61,5 @@
 .main-menu a {
   text-decoration: none;
   padding: 10px;
-  color: black;
+  color: #fdde6b;
 }

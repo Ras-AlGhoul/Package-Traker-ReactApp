@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "../components/card";
 
-export default function Packages({ data }) {
+export default function Packages({ data, username }) {
   const CardsArray = data.map((item) => (
     <Card
       key={item.id}
@@ -16,7 +16,7 @@ export default function Packages({ data }) {
   return (
     <div>
       <section className="content">
-        <h2 className="h1">Mr.Jhon Doe Packages </h2>
+        <h3 className="h1">Mr/Mrs. {username} Packages </h3>
         <div className="grid">{CardsArray}</div>
       </section>
     </div>

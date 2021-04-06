@@ -35,7 +35,9 @@ export default function App() {
           <Route
             exact
             path="/packages"
-            component={() => <Packages data={data} />}
+            component={() => (
+              <Packages username={data[0]?.user_name} data={data} />
+            )}
           />
           <Route
             exact

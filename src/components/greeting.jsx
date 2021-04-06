@@ -14,7 +14,7 @@ export default function Greeting() {
 
   return (
     <div>
-      <h2 className="h1"> {greeting}</h2>
+      <h3 className="h1"> {greeting}</h3>
     </div>
   );
 }
